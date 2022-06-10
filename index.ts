@@ -2,6 +2,8 @@ import fastify from "fastify";
 
 const server = fastify();
 
+console.log(process.env)
+
 server.get("/", async (request, reply) => {
   reply.code(200).send({ message: "Hello world!" });
 });
