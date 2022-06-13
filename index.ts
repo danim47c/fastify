@@ -3,7 +3,7 @@ import fastify from "fastify";
 const server = fastify();
 
 server.get("/", async (request, reply) => {
-  reply.code(200).send({ message: "This one is the last version" });
+  reply.code(200).send({ message: "This the new preview branch" });
 });
 
 server.listen(process.env.PORT || 8080, "0.0.0.0", (err, address) => {
